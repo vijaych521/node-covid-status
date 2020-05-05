@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Help</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+     {{>commonInclude}}
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>{{helpText}}</p>
+        <form id='covidForm'>
+            <input id="searchInput">
+            <button id="btn">Submit</button>
+        </form>
+        <div class="card-columns" id="stateTemplate" style="margin-top: 5px ;"></div>
+    </div>
+    
+    {{>footer}}
+     <script src="/js/app.js"></script>
+</body>
+
+</html>
