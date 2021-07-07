@@ -27,11 +27,11 @@ jobs:
         with: 
           node-version: 12
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      # Runs CI and Test
+      - name: Run CI and Test and deploy
+      - run: echo Hello, world!
 
-      # run: npm ci
+      - run: npm ci
       # run: npm test
       # run: npm run build
-      # run: npm run deploy
+      - run: npm run start
